@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <title>DONOR FORM</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url('5556661.jpg');
+            background-size: cover;
+            height: 100vb;
+        }
+        #form_body{
+            width: 800px;
+            height: 600px;
+            background-color: white;
+            margin: auto;
+            position: relative;
+            top: 15%;
+            border-radius: 10px;
+            bottom: 15%;
+        }
+        #heading{
+            background-color: #33058b;
+            color: white;
+            text-align: center;
+            padding: 5px 0 5px 0;
+            font-family: 'Tilt Neon', cursive;
+        }
+        #form_details{
+            margin-left: 10px;
+            margin-top: 5px;
+            font-size: 20px;
+            font-family: 'Tilt Neon', cursive;
+        }
+        #form_details text_box{
+            padding: 5px;
+            border-radius: 3px;
+            width: 300px;
+            border: 2px solid #33058b;
+        }
+        table td{
+            padding-top: 10px;
+        }
+        .select{
+            padding: 5px;
+            border-radius: 3px;
+            width: 324px;
+            border: 2px solid #33058b;
+        }
+
+        #state{
+            border-radius: 3px;
+            width: 172px;
+            border: 2px solid #33058b;
+        }
+
+        #country{
+            border-radius: 3px;
+            width: 172px;
+            border: 2px solid #33058b;
+        }
+
+        #r_button{
+            margin-left: 10px;
+            margin: 0px;
+            outline: none;
+        }
+        #submit{
+            background-color: #33058b;
+            color: white;
+            border: 0px;
+            padding: 10px 30px;
+            border-radius: 50px;
+            position: relative;
+            left: 40%;
+            top: 20px;
+        }
+        #submit:hover{
+            background-color: #5d0def;
+        }
+    </style>
+</head>
+<body>
+    <div id="form_body">
+        <div id="heading">
+            <h1>Donor Form</h1>
+        </div>
+        <div id="form_details">
+            <form action="">
+                <table>
+                    <tr>
+                        <td>
+                            <p>First Name:</p>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Enter your First name" class="text_box">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Last Name:</p>
+                        </td>
+                        <td>
+                            <input type="text" class="text_box" placeholder="Enter your First name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Companies:</p>
+                        </td>
+                        <td>
+                            <input type="text" class="text_box" placeholder="Enter your company's name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Adress 1:</p>
+                        </td>
+                        <td>
+                            <input type="text" class="text_box" placeholder="Enter your Adress">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Adress 2:</p>
+                        </td>
+                        <td>
+                            <input type="text" class="text_box" placeholder="Enter your Adress">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Country:</p>
+                        </td>
+                        <td>
+                            <select id="country" >
+                                <option selected disabled style="display:none">Select Country</option>
+                                <option value="Japan">Japan</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="UK">UK</option>
+                                <option value="Bangladesh">Bangladesh</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>State:</p>
+                        </td>
+                        <td>
+                            <select id="state" >
+                                <option selected disabled style="display:none">Select State</option>
+                                <option value="Dhaka">Dhaka</option>
+                                <option value="Chittagong">Chittagong</option>
+                                <option value="Khulna">Khulna</option>
+                                <option value="Rajshahi">Rajshahi</option>
+                                <option value="Sylhet">Sylhet</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Zipcode:</p>
+                        </td>
+                        <td>
+                            <input type="text" class="text_box" placeholder="Enter your Zip code">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Phone:</p>
+                        </td>
+                        <td>
+                            <input type="text" class="text_box" placeholder="Enter your number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Email:</p>
+                        </td>
+                        <td>
+                            <input type="text" class="text_box" placeholder="..@gmail.com">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Donation Amount:</p>
+                        </td>
+                        <td>
+                            <input type="radio" id="r_button">None
+                            <input type="radio" id="r_button">5$
+                            <input type="radio" id="r_button">15$
+                            <input type="radio" id="r_button">30$
+                            <input type="radio" id="r_button">50$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Recurring Donation:</p>
+                        </td>
+                        <td>
+                            <input type="checkbox"> <p style="font-size: 18px; display: inline-block;">I am interested in giving on regular basis</p>
+                        </td>
+                    </tr>
+                </table>
+                <button id="submit">Sutmit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
